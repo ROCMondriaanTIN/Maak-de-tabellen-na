@@ -104,63 +104,63 @@ const assignments = [
   
     // Exercises 21-35: Full HTML recreation with color words
     { id: 21, type: 'textarea', title: "Vraag 3.1", 
-      solution: '<table>\n  <tr>\n    <td>Red</td>\n    <td>Blue</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <td>Green</td>\n    <td>Yellow</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 22, type: 'textarea', title: "Vraag 3.2", 
-      solution: '<table>\n  <tr>\n    <td>Green</td>\n  </tr>\n  <tr>\n    <td>Yellow</td>\n  </tr>\n  <tr>\n    <td>Orange</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <td>Orange</td>\n    <td>Purple</td>\n    <td>Pink</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 23, type: 'textarea', title: "Vraag 3.3", 
-      solution: '<table>\n  <tr>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n  </tr>\n  <tr>\n    <td>Red</td>\n    <td>Blue</td>\n    <td>Black</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <th>Brown</th>\n    <th>Black</th>\n  </tr>\n  <tr>\n    <td>White</td>\n    <td>Gray</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 24, type: 'textarea', title: "Vraag 3.4", 
-      solution: '<table>\n  <tr>\n    <td>White</td>\n    <td>Gray</td>\n  </tr>\n  <tr>\n    <td>Green</td>\n    <td>Yellow</td>\n  </tr>\n  <tr>\n    <td>Orange</td>\n    <td>Purple</td>\n  </tr>\n  <tr>\n    <td>Pink</td>\n    <td>Brown</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <td>Red</td>\n    <td>Blue</td>\n  </tr>\n  <tr>\n    <td>Green</td>\n    <td>Yellow</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 25, type: 'textarea', title: "Vraag 3.5", 
-      solution: '<table>\n  <tr>\n    <td>Red</td>\n    <td>Blue</td>\n    <td>Green</td>\n    <td>Yellow</td>\n    <td>Orange</td>\n  </tr>\n  <tr>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n    <td>Black</td>\n    <td>White</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <td>Orange</td>\n    <td>Purple</td>\n    <td>Pink</td>\n  </tr>\n  <tr>\n    <td>Brown</td>\n    <td>Black</td>\n    <td>White</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 26, type: 'textarea', title: "Vraag 3.6", 
-      solution: '<table>\n  <tr>\n    <th>Red</th>\n    <th>Blue</th>\n  </tr>\n  <tr>\n    <td>Green</td>\n    <td>Yellow</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <th>Gray</th>\n    <th>Red</th>\n  </tr>\n  <tr>\n    <td>Blue</td>\n    <td>Green</td>\n  </tr>\n  <tr>\n    <td>Yellow</td>\n    <td>Orange</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 27, type: 'textarea', title: "Vraag 3.7", 
-      solution: '<table>\n  <tr>\n    <th>Orange</th>\n    <th>Purple</th>\n    <th>Pink</th>\n  </tr>\n  <tr>\n    <td>Brown</td>\n    <td>Red</td>\n    <td>Blue</td>\n  </tr>\n  <tr>\n    <td>Green</td>\n    <td>Yellow</td>\n    <td>Black</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n  </tr>\n  <tr>\n    <td>Black</td>\n    <td>White</td>\n    <td>Gray</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 28, type: 'textarea', title: "Vraag 3.8", 
-      solution: '<table>\n  <tr>\n    <th>White</th>\n    <th>Gray</th>\n    <th>Brown</th>\n    <th>Red</th>\n  </tr>\n  <tr>\n    <td>Blue</td>\n    <td>Green</td>\n    <td>Yellow</td>\n    <td>Orange</td>\n  </tr>\n  <tr>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Black</td>\n    <td>White</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <th>Red</th>\n    <th>Blue</th>\n  </tr>\n  <tr>\n    <td>Green</td>\n    <td>Yellow</td>\n  </tr>\n  <tr>\n    <td>Orange</td>\n    <td>Purple</td>\n  </tr>\n  <tr>\n    <td>Pink</td>\n    <td>Brown</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 29, type: 'textarea', title: "Vraag 3.9", 
-      solution: '<table>\n  <tr>\n    <th>Red</th>\n    <th>Blue</th>\n    <th>Green</th>\n  </tr>\n  <tr>\n    <td>Yellow</td>\n    <td>Orange</td>\n    <td>Purple</td>\n  </tr>\n  <tr>\n    <td>Pink</td>\n    <td>Brown</td>\n    <td>Black</td>\n  </tr>\n  <tr>\n    <td>White</td>\n    <td>Gray</td>\n    <td>Red</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <td>Black</td>\n    <td>White</td>\n    <td>Gray</td>\n  </tr>\n  <tr>\n    <td>Red</td>\n    <td>Blue</td>\n    <td>Green</td>\n  </tr>\n  <tr>\n    <td>Yellow</td>\n    <td>Orange</td>\n    <td>Purple</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 30, type: 'textarea', title: "Vraag 3.10", 
-      solution: '<table>\n  <tr>\n    <th>Blue</th>\n    <th>Green</th>\n    <th>Yellow</th>\n    <th>Orange</th>\n    <th>Purple</th>\n  </tr>\n  <tr>\n    <td>Pink</td>\n    <td>Brown</td>\n    <td>Red</td>\n    <td>Black</td>\n    <td>White</td>\n  </tr>\n  <tr>\n    <td>Gray</td>\n    <td>Blue</td>\n    <td>Green</td>\n    <td>Yellow</td>\n    <td>Orange</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <th>Pink</th>\n    <th>Brown</th>\n  </tr>\n  <tr>\n    <td>Black</td>\n    <td>White</td>\n  </tr>\n  <tr>\n    <td>Gray</td>\n    <td>Red</td>\n  </tr>\n  <tr>\n    <td>Blue</td>\n    <td>Green</td>\n  </tr>\n  <tr>\n    <td>Yellow</td>\n    <td>Orange</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 31, type: 'textarea', title: "Vraag 3.11", 
-      solution: '<table>\n  <tr>\n    <th>Red</th>\n    <th>Blue</th>\n    <th>Green</th>\n    <th>Yellow</th>\n  </tr>\n  <tr>\n    <td>Orange</td>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n  </tr>\n  <tr>\n    <td>Black</td>\n    <td>White</td>\n    <td>Gray</td>\n    <td>Red</td>\n  </tr>\n  <tr>\n    <td>Blue</td>\n    <td>Green</td>\n    <td>Yellow</td>\n    <td>Orange</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <th>Purple</th>\n    <th>Pink</th>\n  </tr>\n  <tr>\n    <td>Brown</td>\n    <td>Black</td>\n  </tr>\n  <tr>\n    <td>White</td>\n    <td>Gray</td>\n  </tr>\n  <tr>\n    <td>Red</td>\n    <td>Blue</td>\n  </tr>\n  <tr>\n    <td>Green</td>\n    <td>Yellow</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 32, type: 'textarea', title: "Vraag 3.12", 
-      solution: '<table>\n  <tr>\n    <th>Purple</th>\n    <th>Pink</th>\n    <th>Brown</th>\n    <th>Red</th>\n    <th>Blue</th>\n  </tr>\n  <tr>\n    <td>Green</td>\n    <td>Yellow</td>\n    <td>Orange</td>\n    <td>Black</td>\n    <td>White</td>\n  </tr>\n  <tr>\n    <td>Gray</td>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n    <td>Red</td>\n  </tr>\n  <tr>\n    <td>Blue</td>\n    <td>Green</td>\n    <td>Yellow</td>\n    <td>Orange</td>\n    <td>Black</td>\n  </tr>\n  <tr>\n    <td>White</td>\n    <td>Gray</td>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <td>Orange</td>\n    <td>Purple</td>\n    <td>Pink</td>\n  </tr>\n  <tr>\n    <td>Brown</td>\n    <td>Black</td>\n    <td>White</td>\n  </tr>\n  <tr>\n    <td>Gray</td>\n    <td>Red</td>\n    <td>Blue</td>\n  </tr>\n  <tr>\n    <td>Green</td>\n    <td>Yellow</td>\n    <td>Orange</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 33, type: 'textarea', title: "Vraag 3.13", 
-      solution: '<table>\n  <tr>\n    <th>Red</th>\n    <th>Blue</th>\n    <th>Green</th>\n    <th>Yellow</th>\n    <th>Orange</th>\n  </tr>\n  <tr>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n    <td>Black</td>\n    <td>White</td>\n  </tr>\n  <tr>\n    <td>Gray</td>\n    <td>Red</td>\n    <td>Blue</td>\n    <td>Green</td>\n    <td>Yellow</td>\n  </tr>\n  <tr>\n    <td>Orange</td>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n    <td>Black</td>\n  </tr>\n  <tr>\n    <td>White</td>\n    <td>Gray</td>\n    <td>Red</td>\n    <td>Blue</td>\n    <td>Green</td>\n  </tr>\n  <tr>\n    <td>Yellow</td>\n    <td>Orange</td>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <th>Purple</th>\n    <th>Pink</th>\n  </tr>\n  <tr>\n    <td>Brown</td>\n    <td>Black</td>\n  </tr>\n  <tr>\n    <td>White</td>\n    <td>Gray</td>\n  </tr>\n  <tr>\n    <td>Red</td>\n    <td>Blue</td>\n  </tr>\n  <tr>\n    <td>Green</td>\n    <td>Yellow</td>\n  </tr>\n  <tr>\n    <td>Orange</td>\n    <td>Purple</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 34, type: 'textarea', title: "Vraag 3.14", 
-      solution: '<table>\n  <tr>\n    <th>Black</th>\n    <th>White</th>\n    <th>Gray</th>\n    <th>Brown</th>\n    <th>Red</th>\n  </tr>\n  <tr>\n    <td>Blue</td>\n    <td>Green</td>\n    <td>Yellow</td>\n    <td>Orange</td>\n    <td>Purple</td>\n  </tr>\n  <tr>\n    <td>Pink</td>\n    <td>Brown</td>\n    <td>Red</td>\n    <td>Black</td>\n    <td>White</td>\n  </tr>\n  <tr>\n    <td>Gray</td>\n    <td>Blue</td>\n    <td>Green</td>\n    <td>Yellow</td>\n    <td>Orange</td>\n  </tr>\n  <tr>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n    <td>Red</td>\n    <td>Black</td>\n  </tr>\n  <tr>\n    <td>White</td>\n    <td>Gray</td>\n    <td>Blue</td>\n    <td>Green</td>\n    <td>Yellow</td>\n  </tr>\n  <tr>\n    <td>Orange</td>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n    <td>Red</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <th>Pink</th>\n    <th>Brown</th>\n  </tr>\n  <tr>\n    <td>Black</td>\n    <td>White</td>\n  </tr>\n  <tr>\n    <td>Gray</td>\n    <td>Red</td>\n  </tr>\n  <tr>\n    <td>Blue</td>\n    <td>Green</td>\n  </tr>\n  <tr>\n    <td>Yellow</td>\n    <td>Orange</td>\n  </tr>\n  <tr>\n    <td>Purple</td>\n    <td>Pink</td>\n  </tr>\n</table>', 
       initial: '' },
     
     { id: 35, type: 'textarea', title: "Vraag 3.15", 
-      solution: '<table>\n  <tr>\n    <th>Red</th>\n    <th>Blue</th>\n    <th>Green</th>\n    <th>Yellow</th>\n    <th>Orange</th>\n  </tr>\n  <tr>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n    <td>Black</td>\n    <td>White</td>\n  </tr>\n  <tr>\n    <td>Gray</td>\n    <td>Red</td>\n    <td>Blue</td>\n    <td>Green</td>\n    <td>Yellow</td>\n  </tr>\n  <tr>\n    <td>Orange</td>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n    <td>Black</td>\n  </tr>\n  <tr>\n    <td>White</td>\n    <td>Gray</td>\n    <td>Red</td>\n    <td>Blue</td>\n    <td>Green</td>\n  </tr>\n  <tr>\n    <td>Yellow</td>\n    <td>Orange</td>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n  </tr>\n  <tr>\n    <td>Black</td>\n    <td>White</td>\n    <td>Gray</td>\n    <td>Red</td>\n    <td>Blue</td>\n  </tr>\n  <tr>\n    <td>Green</td>\n    <td>Yellow</td>\n    <td>Orange</td>\n    <td>Purple</td>\n    <td>Pink</td>\n  </tr>\n</table>', 
+      solution: '<table>\n  <tr>\n    <th>Brown</th>\n    <th>Black</th>\n    <th>White</th>\n  </tr>\n  <tr>\n    <td>Gray</td>\n    <td>Red</td>\n    <td>Blue</td>\n  </tr>\n  <tr>\n    <td>Green</td>\n    <td>Yellow</td>\n    <td>Orange</td>\n  </tr>\n  <tr>\n    <td>Purple</td>\n    <td>Pink</td>\n    <td>Brown</td>\n  </tr>\n  <tr>\n    <td>Black</td>\n    <td>White</td>\n    <td>Gray</td>\n  </tr>\n</table>', 
       initial: '' }
   ];
 
