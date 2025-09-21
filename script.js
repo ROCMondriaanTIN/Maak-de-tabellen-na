@@ -286,21 +286,25 @@ function updateScore() {
 function checkFillBlanksAnswer(assignment) {
   const input = document.getElementById(`htmlInput${assignment.id}`).value;
   const previewDiv = document.getElementById(`htmlPreview${assignment.id}`);
-  const exampleDiv = document.getElementById(`htmlExample${assignment.id}`);
   
   // Show preview of current HTML
   previewDiv.innerHTML = input;
   
-  // Add visual feedback to the example table
-  addCellFeedback(assignment, exampleDiv, input);
-  
   // Check if HTML matches solution (ignore all whitespace)
   const normalizedInput = input.replace(/\s/g, '');
   const normalizedSolution = assignment.solution.replace(/\s/g, '');
+  
   if (normalizedInput === normalizedSolution) {
     document.getElementById(`feedback${assignment.id}`).innerHTML = '<span class="party-check">&#10003;</span>';
+  } else {
+    // Check if correct when ignoring case
+    const normalizedInputLower = normalizedInput.toLowerCase();
+    const normalizedSolutionLower = normalizedSolution.toLowerCase();
+    if (normalizedInputLower === normalizedSolutionLower) {
+      document.getElementById(`feedback${assignment.id}`).innerHTML = 'Let op hoofd- en kleine letters';
     } else {
-    document.getElementById(`feedback${assignment.id}`).innerHTML = '';
+      document.getElementById(`feedback${assignment.id}`).innerHTML = '';
+    }
   }
   
   updateScore();
@@ -316,11 +320,19 @@ function checkFillTagsAnswer(assignment) {
   // Check if HTML matches solution (ignore all whitespace)
   const normalizedInput = input.replace(/\s/g, '');
   const normalizedSolution = assignment.solution.replace(/\s/g, '');
+  
   if (normalizedInput === normalizedSolution) {
     document.getElementById(`feedback${assignment.id}`).innerHTML = '<span class="party-check">&#10003;</span>';
     updateScore();
   } else {
-    document.getElementById(`feedback${assignment.id}`).innerHTML = '';
+    // Check if correct when ignoring case
+    const normalizedInputLower = normalizedInput.toLowerCase();
+    const normalizedSolutionLower = normalizedSolution.toLowerCase();
+    if (normalizedInputLower === normalizedSolutionLower) {
+      document.getElementById(`feedback${assignment.id}`).innerHTML = 'Let op hoofd- en kleine letters';
+    } else {
+      document.getElementById(`feedback${assignment.id}`).innerHTML = '';
+    }
   }
 }
 
@@ -547,10 +559,18 @@ window.addEventListener('DOMContentLoaded', () => {
         // Check if HTML matches solution (ignore all whitespace)
         const normalizedInput = input.replace(/\s/g, '');
         const normalizedSolution = assignment.solution.replace(/\s/g, '');
+        
         if (normalizedInput === normalizedSolution) {
           document.getElementById(`feedback${assignment.id}`).innerHTML = '<span class="party-check">&#10003;</span>';
         } else {
-          document.getElementById(`feedback${assignment.id}`).innerHTML = '';
+          // Check if correct when ignoring case
+          const normalizedInputLower = normalizedInput.toLowerCase();
+          const normalizedSolutionLower = normalizedSolution.toLowerCase();
+          if (normalizedInputLower === normalizedSolutionLower) {
+            document.getElementById(`feedback${assignment.id}`).innerHTML = 'Let op hoofd- en kleine letters';
+          } else {
+            document.getElementById(`feedback${assignment.id}`).innerHTML = '';
+          }
         }
         
         updateScore();
