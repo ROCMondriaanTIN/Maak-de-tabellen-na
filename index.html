@@ -6,46 +6,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Oefenen met HTML tabellen</h1>
-    
-  <div class="table-uitleg-fixed">
-    <div>
-        <h2>Score: 0/22</h2>
-        <h2>Uitleg</h2>
-        <p>Op deze website ga je oefenen met HTML tabellen. Probeer eerst de voorbeeldvraag te maken: een tabel met 2 rijen en 3 kolommen. Kijk wat er gebeurt als je de juiste HTML-code intypt.</p>
-        <p>Als dat gelukt is, maak je de volgende 10 opdrachten. In deze opdrachten hoef je alleen de juiste waarden in te vullen voor het aantal rijen en kolommen.</p>
-        <p>De laatste 10 opdrachten zijn ingewikkelder. In deze opdrachten moet je de volledige HTML-code intypen voor de tabel.</p>
-        <p>Je kunt alleen de volgende HTML-elementen gebruiken:</p>
-        <ul>
-          <li>&lt;table&gt; - om een tabel te maken</li>
-          <li>&lt;tr&gt; - om rijen toe te voegen</li>
-          <li>&lt;td&gt; - om cellen toe te voegen</li>
-          <li>&lt;th&gt; - om kolomtitels te maken</li>
-        </ul>
-        <p>Hieronder zie je een voorbeeld van hoe een tabel eruit ziet.</p>
-      </div>
-    <div class="example-table">
-      <table>
-        <tr>
-          <th>Naam</th>
-          <th>Leeftijd</th>
-          <th>Stad</th>
-        </tr>
-        <tr>
-          <td>Jan</td>
-          <td>25</td>
-          <td>Amsterdam</td>
-        </tr>
-        <tr>
-          <td>Piet</td>
-          <td>30</td>
-          <td>Rotterdam</td>
-        </tr>
-      </table>
+    <h1>Oefenen met HTML tabellen <span id="totalScore">(0/35)</span></h1>
+
+  <div class="tab-container">
+    <div class="tab-buttons">
+      <button class="tab-button active" id="tab1" data-tab="1">Oefening 1</button>
+      <button class="tab-button" id="tab2" data-tab="2">Oefening 2</button>
+      <button class="tab-button" id="tab3" data-tab="3">Oefening 3</button>
+    </div>
+    <div class="tab-content">
+      <div id="assignments1" class="tab-panel active"></div>
+      <div id="assignments2" class="tab-panel"></div>
+      <div id="assignments3" class="tab-panel"></div>
     </div>
   </div>
-
-  <div id="assignments"></div>
   <script src="script.js"></script>
 </body>
 </html>

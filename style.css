@@ -167,7 +167,7 @@ td {
 .opdracht_6, .opdracht_7, .opdracht_8, .opdracht_9, .opdracht_10,
 .opdracht_11, .opdracht_12, .opdracht_13, .opdracht_14, .opdracht_15,
 .opdracht_16, .opdracht_17, .opdracht_18, .opdracht_19, .opdracht_20,
-.opdracht_21, .opdracht_22 {
+.opdracht_21, .opdracht_22, .opdracht_23, .opdracht_24, .opdracht_25 {
   margin: 2rem 0;
   padding: 1.5rem;
   background-color: white;
@@ -179,11 +179,123 @@ td {
 .opdracht_6 h3, .opdracht_7 h3, .opdracht_8 h3, .opdracht_9 h3, .opdracht_10 h3,
 .opdracht_11 h3, .opdracht_12 h3, .opdracht_13 h3, .opdracht_14 h3, .opdracht_15 h3,
 .opdracht_16 h3, .opdracht_17 h3, .opdracht_18 h3, .opdracht_19 h3, .opdracht_20 h3,
-.opdracht_21 h3, .opdracht_22 h3 {
+.opdracht_21 h3, .opdracht_22 h3, .opdracht_23 h3, .opdracht_24 h3, .opdracht_25 h3 {
   margin: 0 0 1rem 0;
   color: #333;
   border-bottom: 2px solid #eee;
   padding-bottom: 0.5rem;
+}
+
+/* Blank input styling */
+.blank-input {
+  width: 80px;
+  padding: 4px 6px;
+  border: 2px solid #4CAF50;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-weight: bold;
+  color: #333;
+}
+
+.blank-input:focus {
+  outline: none;
+  border-color: #45a049;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.blank-input::placeholder {
+  color: #999;
+  font-weight: normal;
+}
+
+/* Cell feedback styling */
+.cell-correct {
+  background-color: #d4edda !important;
+  border-color: #c3e6cb !important;
+  color: #155724 !important;
+}
+
+.cell-incorrect {
+  background-color: #f8d7da !important;
+  border-color: #f5c6cb !important;
+  color: #721c24 !important;
+}
+
+.cell-case-warning {
+  background-color: #fff3cd !important;
+  border-color: #ffeaa7 !important;
+  color: #856404 !important;
+}
+
+/* Tab system styling */
+.tab-container {
+  margin: 2rem 0;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 0;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  padding: 1rem 2rem;
+  border: 2px solid #ddd;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 8px 8px 0 0;
+  margin-right: 2px;
+}
+
+.tab-button:hover {
+  background-color: #e9ecef;
+}
+
+.tab-button.active {
+  background-color: white;
+  border-bottom-color: white;
+  color: #333;
+}
+
+.tab-button.completed {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.tab-button.completed::after {
+  content: " ✓";
+  color: #28a745;
+  font-weight: bold;
+  animation: party-check-bounce 0.8s cubic-bezier(.36,1.5,.64,1) 0s 1;
+}
+
+.tab-button.incomplete {
+  background-color: #f5f5f5;
+  border-color: #ddd;
+  color: #6c757d;
+}
+
+.tab-content {
+  background-color: white;
+  border: 2px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 2rem;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
 }
 
 .feedback {
