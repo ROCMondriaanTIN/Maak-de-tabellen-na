@@ -238,7 +238,6 @@ td {
 .tab-buttons {
   display: flex;
   gap: 0;
-  margin-bottom: 1rem;
 }
 
 .tab-button {
