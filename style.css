@@ -244,7 +244,7 @@ td {
 .tab-button {
   padding: 1rem 2rem;
   border: 2px solid #ddd;
-  background-color: #f8f9fa;
+  background-color: #d6d6d6;
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: bold;
@@ -254,7 +254,7 @@ td {
 }
 
 .tab-button:hover {
-  background-color: #e9ecef;
+  background-color: #c0c0c0;
 }
 
 .tab-button.active {
@@ -263,23 +263,11 @@ td {
   color: #333;
 }
 
-.tab-button.completed {
-  background-color: #d4edda;
-  border-color: #c3e6cb;
-  color: #155724;
-}
-
 .tab-button.completed::after {
   content: " ✓";
   color: #28a745;
   font-weight: bold;
   animation: party-check-bounce 0.8s cubic-bezier(.36,1.5,.64,1) 0s 1;
-}
-
-.tab-button.incomplete {
-  background-color: #f5f5f5;
-  border-color: #ddd;
-  color: #6c757d;
 }
 
 .tab-content {
@@ -316,6 +304,21 @@ input[type="text"]:focus {
   outline: none;
   border-color: #4CAF50;
   box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.reset-button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.assignment-container > div:first-child {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Responsive design */

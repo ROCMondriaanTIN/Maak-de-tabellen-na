@@ -178,6 +178,7 @@ function createAssignmentHTML(assignment) {
         <div class="assignment-container">
           <div>
             <textarea id="htmlInput${assignment.id}" rows="8" class="assignment-textarea"></textarea>
+            <button type="button" class="reset-button" onclick="resetTextarea(${assignment.id})">Reset</button>
           </div>
           <div class="assignment-flex-row">
             <div>
@@ -209,6 +210,7 @@ function createAssignmentHTML(assignment) {
         <div class="assignment-container">
           <div>
             <textarea id="htmlInput${assignment.id}" rows="8" class="assignment-textarea"></textarea>
+            <button type="button" class="reset-button" onclick="resetTextarea(${assignment.id})">Reset</button>
           </div>
           <div class="assignment-flex-row">
             <div>
@@ -240,6 +242,7 @@ function createAssignmentHTML(assignment) {
       <div class="assignment-container">
         <div>
             <textarea id="htmlInput${assignment.id}" rows="8" class="assignment-textarea"></textarea>
+            <button type="button" class="reset-button" onclick="resetTextarea(${assignment.id})">Reset</button>
         </div>
         <div class="assignment-flex-row">
           <div>
@@ -291,8 +294,10 @@ function checkFillBlanksAnswer(assignment) {
   // Add visual feedback to the example table
   addCellFeedback(assignment, exampleDiv, input);
   
-  // Check if HTML matches solution (exact comparison, not normalized)
-  if (input.trim() === assignment.solution.trim()) {
+  // Check if HTML matches solution (ignore all whitespace)
+  const normalizedInput = input.replace(/\s/g, '');
+  const normalizedSolution = assignment.solution.replace(/\s/g, '');
+  if (normalizedInput === normalizedSolution) {
     document.getElementById(`feedback${assignment.id}`).innerHTML = '<span class="party-check">&#10003;</span>';
     } else {
     document.getElementById(`feedback${assignment.id}`).innerHTML = '';
@@ -308,8 +313,10 @@ function checkFillTagsAnswer(assignment) {
   // Update preview
   previewDiv.innerHTML = input;
   
-  // Check if HTML matches solution (exact comparison)
-  if (input.trim() === assignment.solution.trim()) {
+  // Check if HTML matches solution (ignore all whitespace)
+  const normalizedInput = input.replace(/\s/g, '');
+  const normalizedSolution = assignment.solution.replace(/\s/g, '');
+  if (normalizedInput === normalizedSolution) {
     document.getElementById(`feedback${assignment.id}`).innerHTML = '<span class="party-check">&#10003;</span>';
     updateScore();
   } else {
@@ -537,8 +544,10 @@ window.addEventListener('DOMContentLoaded', () => {
         // Direct HTML input
         previewDiv.innerHTML = input;
         
-        // Check if HTML matches solution (exact comparison)
-        if (input.trim() === assignment.solution.trim()) {
+        // Check if HTML matches solution (ignore all whitespace)
+        const normalizedInput = input.replace(/\s/g, '');
+        const normalizedSolution = assignment.solution.replace(/\s/g, '');
+        if (normalizedInput === normalizedSolution) {
           document.getElementById(`feedback${assignment.id}`).innerHTML = '<span class="party-check">&#10003;</span>';
         } else {
           document.getElementById(`feedback${assignment.id}`).innerHTML = '';
@@ -556,4 +565,22 @@ window.addEventListener('DOMContentLoaded', () => {
   // Initialize tab status
   updateTabStatus();
 });
+
+function resetTextarea(assignmentId) {
+  const assignment = assignments.find(a => a.id === assignmentId);
+  if (!assignment) return;
+  
+  const textarea = document.getElementById(`htmlInput${assignmentId}`);
+  if (!textarea) return;
+  
+  // Reset to original content based on assignment type
+  if (assignment.type === 'fill-blanks' || assignment.type === 'fill-tags') {
+    textarea.value = assignment.template || '';
+  } else if (assignment.type === 'textarea') {
+    textarea.value = assignment.initial || '';
+  }
+  
+  // Trigger the input event to update preview and feedback
+  textarea.dispatchEvent(new Event('input'));
+}
 
